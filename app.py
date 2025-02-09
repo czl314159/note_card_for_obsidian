@@ -182,7 +182,7 @@ class S3(object):
 
         return self.client.upload_file(
             local_file_path,
-           # bucket_name or self.bucket_name,
+            bucket_name or self.bucket_name,
             remote_file_path,
         )
 
